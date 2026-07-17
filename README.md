@@ -1,125 +1,124 @@
 # 📊 Customer Churn Prediction using Machine Learning
 
 <p align="center">
-  <img src="Assets/1.png" width="900">
+
+![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white)
+![XGBoost](https://img.shields.io/badge/XGBoost-ML-success?style=for-the-badge)
+![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
+
 </p>
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Python-3.10+-blue?style=for-the-badge&logo=python">
-  <img src="https://img.shields.io/badge/Scikit--Learn-ML-orange?style=for-the-badge&logo=scikitlearn">
-  <img src="https://img.shields.io/badge/XGBoost-Classifier-success?style=for-the-badge">
-  <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge">
-</p>
+---
 
-## 📖 Description
+# 📖 Project Description
 
-Customer Churn Prediction is an end-to-end Machine Learning project that predicts whether a telecom customer is likely to **Churn**, **Stay**, or **Join** the company based on customer demographics, subscription details, service usage, and billing information.
+Customer Churn Prediction is an end-to-end **Machine Learning** project that predicts whether a telecom customer is likely to **Churn**, **Stay**, or **Join** based on customer demographics, subscription services, billing information, and account history.
 
-The project covers the complete Machine Learning pipeline, including **data preprocessing, exploratory data analysis (EDA), feature engineering, model training, evaluation, and prediction**. Multiple classification algorithms are implemented and compared to determine the best-performing model for customer churn prediction.
+The project covers the complete Machine Learning workflow including **Data Cleaning**, **Exploratory Data Analysis (EDA)**, **Feature Engineering**, **Model Building**, **Evaluation**, and **Prediction** using multiple classification algorithms.
 
 ---
 
 # 📌 Problem Statement
 
-Customer retention is one of the biggest challenges faced by telecom companies. Acquiring new customers is significantly more expensive than retaining existing ones.
+Customer retention is one of the biggest challenges for subscription-based businesses.
 
-This project analyzes a telecom customer dataset containing **7,043 customer records** and builds predictive models capable of identifying customers who are likely to churn.
+This project analyzes a telecom dataset containing information about **7,043 customers** and develops Machine Learning models capable of identifying customers who are at risk of churning.
 
-By accurately predicting churn, businesses can:
+The predictions help businesses:
 
-- 🎯 Identify high-risk customers
-- 📞 Improve customer engagement
+- 📞 Identify customers likely to leave
+- 🎯 Improve customer retention
 - 💰 Reduce revenue loss
-- 📈 Increase customer retention
-- 🎁 Offer personalized retention strategies
+- 🎁 Offer personalized promotions
+- 📈 Increase customer satisfaction
 
 ---
 
-# 📂 Dataset Information
+# 📂 Dataset
 
-The dataset contains information about **7,043 telecom customers** including:
+The dataset contains information about **7,043 telecom customers**.
 
-- 👤 Customer Demographics
-- 📍 Geographic Location
-- 📅 Customer Tenure
-- 📞 Phone Service
-- 🌐 Internet Service
-- 📜 Contract Type
-- 💳 Payment Method
-- 💰 Monthly Charges
-- 💵 Total Charges
-- 📊 Customer Status (Target Variable)
+Features include:
+
+- Customer Demographics
+- Location
+- Tenure
+- Phone Service
+- Internet Service
+- Contract Type
+- Payment Method
+- Monthly Charges
+- Total Charges
+- Customer Status
 
 ---
 
 # 🚀 Machine Learning Workflow
 
-```
-Dataset Collection
-        │
-        ▼
+```text
+Dataset
+   │
+   ▼
 Data Cleaning
-        │
-        ▼
-Missing Value Handling
-        │
-        ▼
+   │
+   ▼
 Exploratory Data Analysis
-        │
-        ▼
+   │
+   ▼
 Feature Engineering
-        │
-        ▼
+   │
+   ▼
 Encoding
-        │
-        ▼
+   │
+   ▼
 Feature Scaling
-        │
-        ▼
-Train-Test Split
-        │
-        ▼
+   │
+   ▼
+Train/Test Split
+   │
+   ▼
 Model Training
-        │
-        ▼
+   │
+   ▼
 Model Evaluation
-        │
-        ▼
-Customer Churn Prediction
+   │
+   ▼
+Prediction
 ```
 
 ---
 
-# 📷 Project Screenshots
+# 📷 Project Overview
 
-## 📊 Data Overview
+## Dataset Overview
 
 <p align="center">
-<img src="Assets/1.png" width="900">
+<img src="./Assets/1.png" width="900">
 </p>
 
 ---
 
-## 📈 Exploratory Data Analysis
+## Data Analysis
 
 <p align="center">
-<img src="Assets/2.png" width="900">
+<img src="./Assets/2.png" width="900">
 </p>
 
 ---
 
-## 📊 Feature Analysis
+## Feature Engineering & Visualization
 
 <p align="center">
-<img src="Assets/3.png" width="900">
+<img src="./Assets/3.png" width="900">
 </p>
 
 ---
 
-## 🤖 Model Evaluation
+## Model Performance
 
 <p align="center">
-<img src="Assets/4.png" width="900">
+<img src="./Assets/4.png" width="900">
 </p>
 
 ---
@@ -127,21 +126,19 @@ Customer Churn Prediction
 # 🛠 Technologies Used
 
 | Category | Tools |
-|-----------|----------------|
-| Programming Language | Python |
+|----------|----------------|
+| Language | Python |
 | IDE | Jupyter Notebook |
-| Data Manipulation | Pandas, NumPy |
-| Data Visualization | Matplotlib, Seaborn |
+| Data Analysis | Pandas, NumPy |
+| Visualization | Matplotlib, Seaborn |
 | Machine Learning | Scikit-Learn, XGBoost |
 
 ---
 
 # 🤖 Machine Learning Models
 
-The following Machine Learning models were implemented and evaluated.
-
 | Model | Accuracy |
-|--------|-----------|
+|--------|----------|
 | Logistic Regression | **78.28%** |
 | Decision Tree | **77.29%** |
 | Random Forest | **78.11%** |
@@ -156,10 +153,10 @@ The models were evaluated using:
 
 - Accuracy Score
 - Confusion Matrix
-- Classification Report
 - Precision
 - Recall
-- F1-Score
+- F1 Score
+- Classification Report
 
 ---
 
@@ -169,21 +166,21 @@ The following analyses were performed:
 
 - Customer Status Distribution
 - Gender Distribution
-- Contract Type Analysis
+- Contract Analysis
 - Internet Service Analysis
 - Payment Method Analysis
 - Monthly Charges Distribution
 - Total Charges Distribution
-- Tenure Distribution
+- Tenure Analysis
 - Correlation Heatmap
-- Feature Importance Analysis
+- Feature Importance
 
 ---
 
 # 📂 Project Structure
 
-```
-Customer-Churn-Prediction
+```text
+Customer_Churn_Prediction
 │
 ├── Assets
 │   ├── 1.png
@@ -191,11 +188,14 @@ Customer-Churn-Prediction
 │   ├── 3.png
 │   └── 4.png
 │
+├── DataSets
+│
+├── Src
+│
 ├── Customer_Churn_Prediction.ipynb
-├── Customer_Churn.csv
-├── Zip_Code_Population.csv
-├── requirements.txt
-└── README.md
+├── README.md
+├── LICENSE
+└── .gitignore
 ```
 
 ---
@@ -205,22 +205,22 @@ Customer-Churn-Prediction
 Clone the repository
 
 ```bash
-git clone https://github.com/Venkatesh868817/Customer-Churn-Prediction.git
+git clone https://github.com/Venkatesh868817/Customer_Churn_Prediction.git
 ```
 
-Move to the project folder
+Move into the project
 
 ```bash
-cd Customer-Churn-Prediction
+cd Customer_Churn_Prediction
 ```
 
-Install required packages
+Install dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-Launch Jupyter Notebook
+Run Jupyter Notebook
 
 ```bash
 jupyter notebook
@@ -230,45 +230,40 @@ jupyter notebook
 
 # 🎯 Applications
 
-Customer churn prediction helps organizations identify customers who are likely to discontinue their services.
+This project can help telecom companies:
 
-Businesses can use this model to:
-
-- 📞 Contact customers before they churn
-- 🎁 Offer personalized discounts
-- 💬 Improve customer support
-- 📈 Increase customer loyalty
-- 💰 Reduce customer acquisition costs
+- Predict customer churn
+- Improve customer retention
+- Reduce business losses
+- Build targeted marketing campaigns
+- Improve customer experience
 
 ---
 
 # 📊 Results
 
-- ✅ Successfully cleaned and preprocessed customer data.
-- ✅ Conducted detailed Exploratory Data Analysis (EDA).
-- ✅ Built and compared multiple Machine Learning models.
-- ✅ XGBoost achieved the highest accuracy of **80.86%**.
-- ✅ Identified important features influencing customer churn.
+- ✔ Cleaned and preprocessed customer data.
+- ✔ Performed detailed EDA.
+- ✔ Trained multiple Machine Learning models.
+- ✔ Compared model performances.
+- ✔ **XGBoost achieved the highest accuracy (80.86%).**
 
 ---
 
 # 🔮 Future Improvements
 
-- Hyperparameter Tuning
+- Hyperparameter Optimization
 - Cross Validation
-- Feature Selection
-- Model Deployment using Streamlit
-- REST API using FastAPI
-- Docker Containerization
-- Cloud Deployment (AWS)
+- Streamlit Web App
+- FastAPI Deployment
+- Docker Support
+- AWS Deployment
 
 ---
 
-# 📦 Requirements
+# 📦 Libraries Used
 
-```
-Python 3.10+
-
+```text
 numpy
 pandas
 matplotlib
@@ -290,9 +285,9 @@ pip install -r requirements.txt
 
 ## Sangem Venkatesh
 
-**B.Tech Computer Science & Engineering**
+**B.Tech – Computer Science & Engineering**
 
-Aspiring Data Analyst | Machine Learning Enthusiast | Python Developer
+Aspiring Data Analyst | Machine Learning Enthusiast
 
 ---
 
@@ -310,5 +305,26 @@ Aspiring Data Analyst | Machine Learning Enthusiast | Python Developer
 
 </p>
 
-❤️ by <strong>Sangem Venkatesh</strong>
+---
+
+# ⭐ Support
+
+If you like this project,
+
+⭐ Star the repository
+
+🍴 Fork the repository
+
+🛠 Contribute to improve it
+
+---
+
+# 📄 License
+
+This project is licensed under the **MIT License**.
+
+---
+
+<p align="center">
+Made with ❤️ by <b>Sangem Venkatesh</b>
 </p>
