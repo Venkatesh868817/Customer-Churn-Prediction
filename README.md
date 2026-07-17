@@ -145,7 +145,7 @@ Prediction
 | Decision Tree | **77.29%** |
 | Random Forest | **78.11%** |
 | Gaussian Naive Bayes | **36.77%** |
-| XGBoost Classifier | **80.86% ⭐** |
+| XGBoost Classifier | **81.09% ⭐** |
 
 ---
 
@@ -248,7 +248,7 @@ This project can be used by telecom companies to:
 - ✔ Conducted detailed exploratory data analysis.
 - ✔ Built multiple classification models.
 - ✔ Compared model performances.
-- ✔ **XGBoost achieved the highest accuracy of 80.86%.**
+- ✔ **XGBoost achieved the highest accuracy of 81.09%.**
 
 ---
 
@@ -309,7 +309,3 @@ pip install -r requirements.txt
 </p>
 
 ---
-
-nter">
-Made with ❤️ by <strong>Sangem Venkatesh</strong>
-</p>
