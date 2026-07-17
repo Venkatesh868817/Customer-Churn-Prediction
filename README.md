@@ -1,62 +1,90 @@
 # 📊 Customer Churn Prediction using Machine Learning
 
-A Machine Learning project that predicts whether a telecom customer is likely to **Churn**, **Stay**, or **Join** based on customer demographics, subscription details, service usage, and account information.
+<p align="center">
+  <img src="Assets/1.png" width="900">
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.10+-blue?style=for-the-badge&logo=python">
+  <img src="https://img.shields.io/badge/Scikit--Learn-ML-orange?style=for-the-badge&logo=scikitlearn">
+  <img src="https://img.shields.io/badge/XGBoost-Classifier-success?style=for-the-badge">
+  <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge">
+</p>
+
+## 📖 Description
+
+Customer Churn Prediction is an end-to-end Machine Learning project that predicts whether a telecom customer is likely to **Churn**, **Stay**, or **Join** the company based on customer demographics, subscription details, service usage, and billing information.
+
+The project covers the complete Machine Learning pipeline, including **data preprocessing, exploratory data analysis (EDA), feature engineering, model training, evaluation, and prediction**. Multiple classification algorithms are implemented and compared to determine the best-performing model for customer churn prediction.
 
 ---
 
-## 📌 Problem Definition
+# 📌 Problem Statement
 
-The **Customer Churn** dataset contains information about **7,043 telecom customers** from a California-based telecommunications company.
+Customer retention is one of the biggest challenges faced by telecom companies. Acquiring new customers is significantly more expensive than retaining existing ones.
 
-Each record represents a single customer and includes information about:
+This project analyzes a telecom customer dataset containing **7,043 customer records** and builds predictive models capable of identifying customers who are likely to churn.
+
+By accurately predicting churn, businesses can:
+
+- 🎯 Identify high-risk customers
+- 📞 Improve customer engagement
+- 💰 Reduce revenue loss
+- 📈 Increase customer retention
+- 🎁 Offer personalized retention strategies
+
+---
+
+# 📂 Dataset Information
+
+The dataset contains information about **7,043 telecom customers** including:
 
 - 👤 Customer Demographics
-- 📍 Location
-- 📅 Tenure
-- 📱 Phone Services
-- 🌐 Internet Services
-- 💳 Payment Method
+- 📍 Geographic Location
+- 📅 Customer Tenure
+- 📞 Phone Service
+- 🌐 Internet Service
 - 📜 Contract Type
+- 💳 Payment Method
 - 💰 Monthly Charges
 - 💵 Total Charges
-- 📊 Customer Status (Joined, Stayed, Churned)
-
-The objective of this project is to build a Machine Learning model capable of accurately predicting customer churn so businesses can improve customer retention strategies.
-
-<br>
+- 📊 Customer Status (Target Variable)
 
 ---
 
-# 🚀 Project Workflow
+# 🚀 Machine Learning Workflow
 
 ```
-Data Collection
-      │
-      ▼
+Dataset Collection
+        │
+        ▼
 Data Cleaning
-      │
-      ▼
+        │
+        ▼
 Missing Value Handling
-      │
-      ▼
+        │
+        ▼
 Exploratory Data Analysis
-      │
-      ▼
+        │
+        ▼
 Feature Engineering
-      │
-      ▼
-Encoding & Scaling
-      │
-      ▼
+        │
+        ▼
+Encoding
+        │
+        ▼
+Feature Scaling
+        │
+        ▼
 Train-Test Split
-      │
-      ▼
+        │
+        ▼
 Model Training
-      │
-      ▼
+        │
+        ▼
 Model Evaluation
-      │
-      ▼
+        │
+        ▼
 Customer Churn Prediction
 ```
 
@@ -64,53 +92,65 @@ Customer Churn Prediction
 
 # 📷 Project Screenshots
 
-## 📊 Dataset Overview
+## 📊 Data Overview
 
-<img src="assets/1.png" width="900">
+<p align="center">
+<img src="Assets/1.png" width="900">
+</p>
 
 ---
 
 ## 📈 Exploratory Data Analysis
 
-<img src="assets/2.png" width="900">
+<p align="center">
+<img src="Assets/2.png" width="900">
+</p>
 
-<img src="assets/3.png" width="900">
+---
+
+## 📊 Feature Analysis
+
+<p align="center">
+<img src="Assets/3.png" width="900">
+</p>
 
 ---
 
 ## 🤖 Model Evaluation
 
-<img src="assets/4.png" width="900">
+<p align="center">
+<img src="Assets/4.png" width="900">
+</p>
 
 ---
 
-## 📌 Technologies Used
+# 🛠 Technologies Used
 
-| Category | Technologies |
-|----------|--------------|
+| Category | Tools |
+|-----------|----------------|
 | Programming Language | Python |
 | IDE | Jupyter Notebook |
-| Data Analysis | Pandas, NumPy |
-| Visualization | Matplotlib, Seaborn |
+| Data Manipulation | Pandas, NumPy |
+| Data Visualization | Matplotlib, Seaborn |
 | Machine Learning | Scikit-Learn, XGBoost |
 
 ---
 
 # 🤖 Machine Learning Models
 
-The following models were trained and evaluated:
+The following Machine Learning models were implemented and evaluated.
 
 | Model | Accuracy |
-|--------|----------|
+|--------|-----------|
 | Logistic Regression | **78.28%** |
 | Decision Tree | **77.29%** |
 | Random Forest | **78.11%** |
 | Gaussian Naive Bayes | **36.77%** |
-| XGBoost Classifier | **80.86%** ⭐ |
+| XGBoost Classifier | **80.86% ⭐** |
 
 ---
 
-# 📊 Model Evaluation Metrics
+# 📊 Evaluation Metrics
 
 The models were evaluated using:
 
@@ -123,46 +163,44 @@ The models were evaluated using:
 
 ---
 
+# 📈 Exploratory Data Analysis
+
+The following analyses were performed:
+
+- Customer Status Distribution
+- Gender Distribution
+- Contract Type Analysis
+- Internet Service Analysis
+- Payment Method Analysis
+- Monthly Charges Distribution
+- Total Charges Distribution
+- Tenure Distribution
+- Correlation Heatmap
+- Feature Importance Analysis
+
+---
+
 # 📂 Project Structure
 
 ```
-Customer-Churn-Prediction/
+Customer-Churn-Prediction
+│
+├── Assets
+│   ├── 1.png
+│   ├── 2.png
+│   ├── 3.png
+│   └── 4.png
 │
 ├── Customer_Churn_Prediction.ipynb
 ├── Customer_Churn.csv
 ├── Zip_Code_Population.csv
-├── README.md
 ├── requirements.txt
-│
-├── assets/
-│   ├── dataset.png
-│   ├── eda1.png
-│   ├── eda2.png
-│   └── model.png
-│
-└── models/
+└── README.md
 ```
 
 ---
 
-# 📈 Exploratory Data Analysis
-
-The following analysis was performed:
-
-- Distribution of Customer Status
-- Gender Analysis
-- Contract Type Analysis
-- Monthly Charges Distribution
-- Total Charges Distribution
-- Correlation Heatmap
-- Churn by Internet Service
-- Churn by Payment Method
-- Tenure Distribution
-- Feature Importance
-
----
-
-# ⚙️ Installation
+# ⚙ Installation
 
 Clone the repository
 
@@ -170,13 +208,13 @@ Clone the repository
 git clone https://github.com/Venkatesh868817/Customer-Churn-Prediction.git
 ```
 
-Move into the project folder
+Move to the project folder
 
 ```bash
 cd Customer-Churn-Prediction
 ```
 
-Install required libraries
+Install required packages
 
 ```bash
 pip install -r requirements.txt
@@ -192,29 +230,25 @@ jupyter notebook
 
 # 🎯 Applications
 
-Customer churn prediction helps businesses identify customers who are likely to leave.
+Customer churn prediction helps organizations identify customers who are likely to discontinue their services.
 
-Using this prediction, companies can:
+Businesses can use this model to:
 
-- 📞 Contact high-risk customers
+- 📞 Contact customers before they churn
 - 🎁 Offer personalized discounts
 - 💬 Improve customer support
-- 📈 Increase customer retention
-- 💰 Reduce revenue loss
+- 📈 Increase customer loyalty
+- 💰 Reduce customer acquisition costs
 
 ---
 
 # 📊 Results
 
-✅ Successfully cleaned and preprocessed customer data.
-
-✅ Performed comprehensive Exploratory Data Analysis (EDA).
-
-✅ Trained multiple Machine Learning models.
-
-✅ Compared model performances.
-
-✅ XGBoost achieved the highest accuracy of **80.86%**.
+- ✅ Successfully cleaned and preprocessed customer data.
+- ✅ Conducted detailed Exploratory Data Analysis (EDA).
+- ✅ Built and compared multiple Machine Learning models.
+- ✅ XGBoost achieved the highest accuracy of **80.86%**.
+- ✅ Identified important features influencing customer churn.
 
 ---
 
@@ -224,8 +258,8 @@ Using this prediction, companies can:
 - Cross Validation
 - Feature Selection
 - Model Deployment using Streamlit
-- Flask/FastAPI API
-- Docker Deployment
+- REST API using FastAPI
+- Docker Containerization
 - Cloud Deployment (AWS)
 
 ---
@@ -244,7 +278,7 @@ xgboost
 jupyter
 ```
 
-Install them using
+Install using:
 
 ```bash
 pip install -r requirements.txt
@@ -254,17 +288,18 @@ pip install -r requirements.txt
 
 # 👨‍💻 Author
 
-### **Sangem Venkatesh**
+## Sangem Venkatesh
 
-🎓 B.Tech Computer Science & Engineering
+**B.Tech Computer Science & Engineering**
 
-💼 Aspiring Data Analyst | Machine Learning Enthusiast
+Aspiring Data Analyst | Machine Learning Enthusiast | Python Developer
 
 ---
 
-## 🌐 Connect with Me
+# 🌐 Connect with Me
 
 <p align="left">
+
 <a href="https://github.com/Venkatesh868817">
 <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github">
 </a>
@@ -273,25 +308,7 @@ pip install -r requirements.txt
 <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin">
 </a>
 
-<a href="mailto:sangemvenkatesh203@gmail.com">
-<img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white">
-</a>
 </p>
 
----
-
-# ⭐ Show your support
-
-If you found this project useful,
-
-⭐ Star this repository
-
-🍴 Fork this repository
-
-📢 Share it with others
-
----
-
-## 📄 License
-
-This project is licensed under the **MIT License**.
+❤️ by <strong>Sangem Venkatesh</strong>
+</p>
