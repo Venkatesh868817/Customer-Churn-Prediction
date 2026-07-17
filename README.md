@@ -3,6 +3,7 @@
 <p align="center">
 
 ![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
 ![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white)
 ![XGBoost](https://img.shields.io/badge/XGBoost-ML-success?style=for-the-badge)
 ![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
@@ -11,23 +12,31 @@
 
 ---
 
-# 📖 Project Description
+# 📖 Description
 
 Customer Churn Prediction is an end-to-end **Machine Learning** project that predicts whether a telecom customer is likely to **Churn**, **Stay**, or **Join** based on customer demographics, subscription services, billing information, and account history.
 
-The project covers the complete Machine Learning workflow including **Data Cleaning**, **Exploratory Data Analysis (EDA)**, **Feature Engineering**, **Model Building**, **Evaluation**, and **Prediction** using multiple classification algorithms.
+The project demonstrates the complete machine learning pipeline, including:
+
+- Data Cleaning
+- Exploratory Data Analysis (EDA)
+- Feature Engineering
+- Data Preprocessing
+- Model Training
+- Model Evaluation
+- Customer Churn Prediction
 
 ---
 
 # 📌 Problem Statement
 
-Customer retention is one of the biggest challenges for subscription-based businesses.
+Customer retention is a major challenge for telecom companies. Predicting customers who are likely to churn enables businesses to take proactive measures and improve customer satisfaction.
 
-This project analyzes a telecom dataset containing information about **7,043 customers** and develops Machine Learning models capable of identifying customers who are at risk of churning.
+This project analyzes a telecom customer dataset containing **7,043 customer records** and builds machine learning models to predict customer churn.
 
-The predictions help businesses:
+### Business Benefits
 
-- 📞 Identify customers likely to leave
+- 📞 Identify high-risk customers
 - 🎯 Improve customer retention
 - 💰 Reduce revenue loss
 - 🎁 Offer personalized promotions
@@ -35,14 +44,16 @@ The predictions help businesses:
 
 ---
 
-# 📂 Dataset
+# 📂 Dataset Information
 
 The dataset contains information about **7,043 telecom customers**.
 
-Features include:
+### Features
 
 - Customer Demographics
 - Location
+- Gender
+- Senior Citizen
 - Tenure
 - Phone Service
 - Internet Service
@@ -50,7 +61,7 @@ Features include:
 - Payment Method
 - Monthly Charges
 - Total Charges
-- Customer Status
+- Customer Status (Target)
 
 ---
 
@@ -58,32 +69,29 @@ Features include:
 
 ```text
 Dataset
-   │
-   ▼
+    │
+    ▼
 Data Cleaning
-   │
-   ▼
-Exploratory Data Analysis
-   │
-   ▼
+    │
+    ▼
+EDA
+    │
+    ▼
 Feature Engineering
-   │
-   ▼
-Encoding
-   │
-   ▼
-Feature Scaling
-   │
-   ▼
-Train/Test Split
-   │
-   ▼
+    │
+    ▼
+Encoding & Scaling
+    │
+    ▼
+Train-Test Split
+    │
+    ▼
 Model Training
-   │
-   ▼
+    │
+    ▼
 Model Evaluation
-   │
-   ▼
+    │
+    ▼
 Prediction
 ```
 
@@ -91,42 +99,34 @@ Prediction
 
 # 📷 Project Overview
 
-## Dataset Overview
+## 📊 Dataset Overview
 
-<p align="center">
-<img src="./Assets/1.png" width="900">
-</p>
+![Dataset](Assets/1.png)
 
 ---
 
-## Data Analysis
+## 📈 Exploratory Data Analysis
 
-<p align="center">
-<img src="./Assets/2.png" width="900">
-</p>
+![EDA](Assets/2.png)
 
 ---
 
-## Feature Engineering & Visualization
+## 📉 Feature Analysis
 
-<p align="center">
-<img src="./Assets/3.png" width="900">
-</p>
+![Feature Analysis](Assets/3.png)
 
 ---
 
-## Model Performance
+## 🤖 Model Evaluation
 
-<p align="center">
-<img src="./Assets/4.png" width="900">
-</p>
+![Model Evaluation](Assets/4.png)
 
 ---
 
-# 🛠 Technologies Used
+# 🛠️ Technologies Used
 
-| Category | Tools |
-|----------|----------------|
+| Category | Technologies |
+|----------|--------------|
 | Language | Python |
 | IDE | Jupyter Notebook |
 | Data Analysis | Pandas, NumPy |
@@ -162,16 +162,16 @@ The models were evaluated using:
 
 # 📈 Exploratory Data Analysis
 
-The following analyses were performed:
+Performed analysis on:
 
 - Customer Status Distribution
 - Gender Distribution
-- Contract Analysis
-- Internet Service Analysis
-- Payment Method Analysis
-- Monthly Charges Distribution
-- Total Charges Distribution
-- Tenure Analysis
+- Contract Type
+- Internet Service
+- Payment Method
+- Monthly Charges
+- Total Charges
+- Tenure Distribution
 - Correlation Heatmap
 - Feature Importance
 
@@ -189,9 +189,7 @@ Customer_Churn_Prediction
 │   └── 4.png
 │
 ├── DataSets
-│
 ├── Src
-│
 ├── Customer_Churn_Prediction.ipynb
 ├── README.md
 ├── LICENSE
@@ -200,15 +198,15 @@ Customer_Churn_Prediction
 
 ---
 
-# ⚙ Installation
+# ⚙️ Installation
 
 Clone the repository
 
 ```bash
-git clone https://github.com/Venkatesh868817/Customer_Churn_Prediction.git
+git clone https://github.com/Venkatesh868817/Customer-Churn-Prediction.git
 ```
 
-Move into the project
+Navigate to the project folder
 
 ```bash
 cd Customer_Churn_Prediction
@@ -220,7 +218,7 @@ Install dependencies
 pip install -r requirements.txt
 ```
 
-Run Jupyter Notebook
+Launch Jupyter Notebook
 
 ```bash
 jupyter notebook
@@ -230,38 +228,39 @@ jupyter notebook
 
 # 🎯 Applications
 
-This project can help telecom companies:
+Customer churn prediction helps businesses:
 
-- Predict customer churn
+- Predict customer attrition
 - Improve customer retention
-- Reduce business losses
-- Build targeted marketing campaigns
-- Improve customer experience
+- Reduce operational costs
+- Increase customer lifetime value
+- Support data-driven business decisions
 
 ---
 
 # 📊 Results
 
-- ✔ Cleaned and preprocessed customer data.
-- ✔ Performed detailed EDA.
-- ✔ Trained multiple Machine Learning models.
-- ✔ Compared model performances.
-- ✔ **XGBoost achieved the highest accuracy (80.86%).**
+- ✅ Cleaned and preprocessed telecom customer data.
+- ✅ Conducted detailed exploratory data analysis.
+- ✅ Trained multiple classification models.
+- ✅ Compared model performance.
+- ✅ **XGBoost achieved the highest accuracy (81.09%).**
 
 ---
 
-# 🔮 Future Improvements
+# 🔮 Future Enhancements
 
-- Hyperparameter Optimization
+- Hyperparameter Tuning
 - Cross Validation
-- Streamlit Web App
+- Feature Selection
+- Streamlit Web Application
 - FastAPI Deployment
 - Docker Support
 - AWS Deployment
 
 ---
 
-# 📦 Libraries Used
+# 📦 Required Libraries
 
 ```text
 numpy
@@ -273,7 +272,7 @@ xgboost
 jupyter
 ```
 
-Install using:
+Install them using:
 
 ```bash
 pip install -r requirements.txt
@@ -305,26 +304,3 @@ Aspiring Data Analyst | Machine Learning Enthusiast
 
 </p>
 
----
-
-# ⭐ Support
-
-If you like this project,
-
-⭐ Star the repository
-
-🍴 Fork the repository
-
-🛠 Contribute to improve it
-
----
-
-# 📄 License
-
-This project is licensed under the **MIT License**.
-
----
-
-<p align="center">
-Made with ❤️ by <b>Sangem Venkatesh</b>
-</p>
